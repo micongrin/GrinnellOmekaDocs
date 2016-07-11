@@ -32,17 +32,19 @@ edit db.ini of new site folder
 sudo vi db.ini```
 
 db.ini should contain:
-```[database]
+```
+[database]
 host     = "localhost"
 username = "newuser"
 password = "password"
 dbname   = "newdb"
 prefix   = ""
-charset  = "utf8"```
+charset  = "utf8"
+```
 
 
 Change owner:group of new site directory and enclosed files/directories
-```cd /var/www/html/{NewSiteDir}```
+```cd /var/www/html/{NewSiteDir}
 sudo chown -R vagrant:www-data .```
 
 Change permissions for files folder so that new files can be uploaded:
@@ -50,4 +52,4 @@ Change permissions for files folder so that new files can be uploaded:
 
 Change permissions for plugins folder so that administrators can upload plugins via sftp:
 ```cd /var/www/html/{NewSiteDir}/plugins
-sudo setfacl -m g:omekaadmins:rwx .```
+sudo setfacl -m g:admins:rwx .```
