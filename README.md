@@ -68,3 +68,5 @@ Change permissions for plugins folder so that administrators can upload plugins 
 ```cd /var/www/html/{NewSiteDir}/plugins```
 
 ```sudo setfacl -m g:admins:rwx .```
+
+In a browser visit http://omekax.grinnell.edu/{NewSiteDir}/install/install.php to complete setup
