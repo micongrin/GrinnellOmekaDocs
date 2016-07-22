@@ -61,7 +61,7 @@ Change owner:group of new site directory and enclosed files/directories
 
 Change permissions for files folder so that new files can be uploaded:
 
-```sudo chmod -R 664 files```
+```sudo chmod -R 774 files```
 
 Change permissions for plugins folder so that administrators can upload plugins via sftp:
 
